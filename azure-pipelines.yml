@@ -17,7 +17,7 @@ steps:
     subscriptionId: '2f3682af-8f07-4bc1-8d28-5c7c23b00c02'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'adrianaRG'
-    location: 'West Europe'
+    location: 'westeurope'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/AdrianaDAW/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
     overrideParameters: '-projectName ARM'
