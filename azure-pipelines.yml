@@ -22,3 +22,17 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/AdrianaDAW/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
     overrideParameters: '-projectName arm'
     deploymentMode: 'Incremental'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      sleep 60
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(2f3682af-8f07-4bc1-8d28-5c7c23b00c02)'
+    subscriptionId: '2f3682af-8f07-4bc1-8d28-5c7c23b00c02'
+    action: 'DeleteRG'
+    resourceGroupName: 'adrianaRG'
