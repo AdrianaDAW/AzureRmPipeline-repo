@@ -20,5 +20,5 @@ steps:
     location: 'westeurope'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/AdrianaDAW/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName ARM'
+    overrideParameters: '-projectName arm'
     deploymentMode: 'Incremental'
